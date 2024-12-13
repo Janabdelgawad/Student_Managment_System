@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Student Management System</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="bg-primary text-white py-3">
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+                <li class="nav-item"><a href="dashboard.html" class="nav-link text-white">Dashboard</a></li>
+                <li class="nav-item"><a href="student-registration.html" class="nav-link text-white">Register Student</a></li>
+                <li class="nav-item"><a href="courses.html" class="nav-link text-white">Courses</a></li>
+                <li class="nav-item"><a href="grades.html" class="nav-link text-white">Grades</a></li>
+                <li class="nav-item"><a href="attendance.html" class="nav-link text-white">Attendance</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link text-white">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dashboard-overview py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Dashboard Overview</h2>
+                <p class="text-center mb-4">Quick access to system stats and student data.</p>
+
+                <!-- Dashboard Cards for Statistics -->
+                <div class="row">
+                    <div class="col-md-3 mb-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h3>Total Students</h3>
+                                <p>120</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h3>Total Courses</h3>
+                                <p>15</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h3>Active Enrollments</h3>
+                                <p>100</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h3>Average Grade</h3>
+                                <p>B</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recent-activities py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Recent Activities</h2>
+                <table class="table table-bordered table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Date</th>
+                            <th>Activity</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Placeholder for recent activities -->
+                        <tr>
+                            <td>2024-12-10</td>
+                            <td>New Student Registered</td>
+                            <td>John Doe (ID: 101)</td>
+                        </tr>
+                        <tr>
+                            <td>2024-12-09</td>
+                            <td>Grade Updated</td>
+                            <td>Jane Smith - Math 101 (Grade: B+)</td>
+                        </tr>
+                        <tr>
+                            <td>2024-12-08</td>
+                            <td>Attendance Recorded</td>
+                            <td>Sam Brown - Chemistry 101</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Contact Us: info@school.com</p>
+    </footer>
+
+    <!-- Link to Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

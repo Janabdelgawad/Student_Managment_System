@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Student - Student Management System</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="bg-primary text-white py-3">
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a href="./index.html" class="nav-link text-white">Home</a></li>
+                <li class="nav-item"><a href="dashboard.html" class="nav-link text-white">Dashboard</a></li>
+                <li class="nav-item"><a href="student-registration.html" class="nav-link text-white">Register Student</a></li>
+                <li class="nav-item"><a href="courses.html" class="nav-link text-white">Courses</a></li>
+                <li class="nav-item"><a href="grades.html" class="nav-link text-white">Grades</a></li>
+                <li class="nav-item"><a href="attendance.html" class="nav-link text-white">Attendance</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link text-white">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="py-5">
+        <div class="container">
+            <section class="student-registration" id = "studentRegistrationForm">
+                <h2 class="text-center mb-4">Register New Student</h2>
+                <p class="text-center mb-4">Please fill out the form below to register a new student.</p>
+
+                <!-- Student Registration Form -->
+                <form action="dashboard.html" method="post" id="studentRegistrationForm">
+                    <div class="form-group">
+                        <label for="studentId">Student ID</label>
+                        <input type="text" class="form-control" id="studentId" name="studentId" required placeholder="Enter student ID">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName" required placeholder="Enter first name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName" required placeholder="Enter last name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" required placeholder="Enter email address">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" required placeholder="Enter phone number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea class="form-control" id="address" name="address" required placeholder="Enter student address"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="course">Select Courses</label>
+                        <select class="form-control" id="course" name="course" multiple required>
+                            <option value="math101">Math 101</option>
+                            <option value="history201">History 201</option>
+                            <option value="chemistry101">Chemistry 101</option>
+                            <option value="biology102">Biology 102</option>
+                            <option value="computerScience103">Computer Science 103</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Register Student</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Contact Us: info@school.com</p>
+    </footer>
+
+    <!-- Link to Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

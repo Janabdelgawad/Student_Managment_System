@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Student Management System</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="bg-primary text-white py-3">
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+                <li class="nav-item"><a href="dashboard.html" class="nav-link text-white">Dashboard</a></li>
+                <li class="nav-item"><a href="courses.html" class="nav-link text-white">Courses</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link text-white">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="course-management py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Manage Courses</h2>
+                <p class="text-center mb-4">View and manage the courses offered to students.</p>
+
+                <!-- Button to add a new course -->
+                <div class="text-center mb-4">
+                    <a href="add-course.html" class="btn btn-success btn-lg">Add New Course</a>
+                </div>
+
+                <!-- Courses Table -->
+                <table class="table table-bordered table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Course ID</th>
+                            <th>Course Name</th>
+                            <th>Instructor</th>
+                            <th>Credits</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Placeholder data, can be dynamically populated -->
+                        <tr>
+                            <td>101</td>
+                            <td>Math 101</td>
+                            <td>Dr. John Doe</td>
+                            <td>3</td>
+                            <td>
+                                <a href="edit-course.html" class="btn btn-warning btn-sm">Edit</a>
+                                <a href="delete-course.html" class="btn btn-danger btn-sm">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>102</td>
+                            <td>History 201</td>
+                            <td>Prof. Jane Smith</td>
+                            <td>4</td>
+                            <td>
+                                <a href="edit-course.html" class="btn btn-warning btn-sm">Edit</a>
+                                <a href="delete-course.html" class="btn btn-danger btn-sm">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>103</td>
+                            <td>Chemistry 101</td>
+                            <td>Dr. Sam Brown</td>
+                            <td>3</td>
+                            <td>
+                                <a href="edit-course.html" class="btn btn-warning btn-sm">Edit</a>
+                                <a href="delete-course.html" class="btn btn-danger btn-sm">Delete</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Contact Us: info@school.com</p>
+    </footer>
+
+    <!-- Link to Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

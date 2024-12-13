@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance - Student Management System</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="bg-primary text-white py-3">
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+                <li class="nav-item"><a href="dashboard.html" class="nav-link text-white">Dashboard</a></li>
+                <li class="nav-item"><a href="attendance.html" class="nav-link text-white">Attendance</a></li>
+                <li class="nav-item"><a href="grades.html" class="nav-link text-white">Grades</a></li>
+                <li class="nav-item"><a href="courses.html" class="nav-link text-white">Courses</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link text-white">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="py-5">
+        <div class="container">
+            <section class="attendance-management">
+                <h2 class="text-center mb-4">Track Student Attendance</h2>
+                <p class="text-center mb-4">Record and view student attendance for various courses.</p>
+
+                <!-- Attendance Table -->
+                <table class="table table-bordered table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Student ID</th>
+                            <th>Name</th>
+                            <th>Course</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Placeholder data, can be dynamically populated -->
+                        <tr>
+                            <td>101</td>
+                            <td>John Doe</td>
+                            <td>Math 101</td>
+                            <td>2024-12-10</td>
+                            <td>
+                                <select class="form-control">
+                                    <option value="present">Present</option>
+                                    <option value="absent">Absent</option>
+                                    <option value="excused">Excused</option>
+                                </select>
+                            </td>
+                            <td><button class="btn btn-primary">Save</button></td>
+                        </tr>
+                        <tr>
+                            <td>102</td>
+                            <td>Jane Smith</td>
+                            <td>History 201</td>
+                            <td>2024-12-09</td>
+                            <td>
+                                <select class="form-control">
+                                    <option value="present">Present</option>
+                                    <option value="absent">Absent</option>
+                                    <option value="excused">Excused</option>
+                                </select>
+                            </td>
+                            <td><button class="btn btn-primary">Save</button></td>
+                        </tr>
+                        <tr>
+                            <td>103</td>
+                            <td>Sam Brown</td>
+                            <td>Chemistry 101</td>
+                            <td>2024-12-08</td>
+                            <td>
+                                <select class="form-control">
+                                    <option value="present">Present</option>
+                                    <option value="absent">Absent</option>
+                                    <option value="excused">Excused</option>
+                                </select>
+                            </td>
+                            <td><button class="btn btn-primary">Save</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Contact Us: info@school.com</p>
+    </footer>
+
+    <!-- Link to Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
